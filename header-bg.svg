@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="100" viewBox="0 0 1600 100" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eaf2ff"/>
+      <stop offset=".5" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#e3eeff"/>
+    </linearGradient>
+    <radialGradient id="blobB" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#7fb0ff" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#7fb0ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blobG" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#6fdcb0" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#6fdcb0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sphB" cx=".35" cy=".3" r=".75">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset=".25" stop-color="#9cc3ff"/>
+      <stop offset=".75" stop-color="#3d7be0"/>
+      <stop offset="1" stop-color="#1e4fae"/>
+    </radialGradient>
+    <radialGradient id="sphG" cx=".35" cy=".3" r=".75">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset=".25" stop-color="#b6f0d8"/>
+      <stop offset=".75" stop-color="#2fb487"/>
+      <stop offset="1" stop-color="#16805e"/>
+    </radialGradient>
+    <radialGradient id="sphY" cx=".35" cy=".3" r=".75">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset=".25" stop-color="#ffe6a6"/>
+      <stop offset=".75" stop-color="#f2b33d"/>
+      <stop offset="1" stop-color="#c78714"/>
+    </radialGradient>
+    <linearGradient id="cubeTop" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d9e8ff"/><stop offset="1" stop-color="#a9c9ff"/></linearGradient>
+    <linearGradient id="cubeL" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fa0f5"/><stop offset="1" stop-color="#3f74d8"/></linearGradient>
+    <linearGradient id="cubeR" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3d6fd0"/><stop offset="1" stop-color="#244fa8"/></linearGradient>
+    <linearGradient id="capTop" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a4f7d"/><stop offset="1" stop-color="#16213f"/></linearGradient>
+    <linearGradient id="capBase" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1b2748"/><stop offset=".5" stop-color="#2f4373"/><stop offset="1" stop-color="#131c36"/></linearGradient>
+    <linearGradient id="bookL" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#dbe6f7"/></linearGradient>
+    <linearGradient id="bookR" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#dbe6f7"/></linearGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="1.6" in="SourceAlpha"/><feOffset dy="3"/><feComponentTransfer><feFuncA type="linear" slope=".28"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.1" fill="#3d7be0" fill-opacity=".12"/></pattern>
+  </defs>
+
+  <rect width="1600" height="100" fill="url(#bg)"/>
+  <rect width="1600" height="100" fill="url(#dots)"/>
+  <ellipse cx="260" cy="20" rx="260" ry="90" fill="url(#blobG)"/>
+  <ellipse cx="820" cy="110" rx="320" ry="90" fill="url(#blobB)"/>
+  <ellipse cx="1420" cy="0" rx="300" ry="100" fill="url(#blobB)"/>
+
+  <!-- faint formulas -->
+  <g font-family="Georgia, 'Times New Roman', serif" font-style="italic" fill="#2b5fc4" fill-opacity=".09">
+    <text x="470" y="34" font-size="22">π</text>
+    <text x="560" y="82" font-size="18">√x</text>
+    <text x="700" y="30" font-size="18">E = mc²</text>
+    <text x="905" y="86" font-size="20">∑</text>
+    <text x="1040" y="34" font-size="17">a² + b² = c²</text>
+    <text x="1210" y="84" font-size="20">∫</text>
+    <text x="1300" y="30" font-size="17">H₂O</text>
+  </g>
+
+  <!-- orbit line -->
+  <path d="M380 70 C 600 10, 900 110, 1180 40 S 1500 60, 1600 20" fill="none" stroke="#3d7be0" stroke-opacity=".14" stroke-width="1.5" stroke-dasharray="4 6"/>
+
+  <!-- isometric cube -->
+  <g transform="translate(130 52)" filter="url(#soft)" opacity=".85">
+    <path d="M0 -14 L16 -6 L0 2 L-16 -6 Z" fill="url(#cubeTop)"/>
+    <path d="M-16 -6 L0 2 L0 20 L-16 12 Z" fill="url(#cubeL)"/>
+    <path d="M16 -6 L0 2 L0 20 L16 12 Z" fill="url(#cubeR)"/>
+  </g>
+  <g transform="translate(1580 30) scale(.7)" filter="url(#soft)" opacity=".75">
+    <path d="M0 -14 L16 -6 L0 2 L-16 -6 Z" fill="url(#cubeTop)"/>
+    <path d="M-16 -6 L0 2 L0 20 L-16 12 Z" fill="url(#cubeL)"/>
+    <path d="M16 -6 L0 2 L0 20 L16 12 Z" fill="url(#cubeR)"/>
+  </g>
+
+  <!-- glossy spheres -->
+  <circle cx="1470" cy="80" r="8" fill="url(#sphG)" filter="url(#soft)"/>
+  <circle cx="598" cy="26" r="6" fill="url(#sphY)" filter="url(#soft)" opacity=".85"/>
+  <circle cx="215" cy="20" r="6" fill="url(#sphB)" filter="url(#soft)" opacity=".8"/>
+  <circle cx="1435" cy="24" r="5" fill="url(#sphG)" filter="url(#soft)" opacity=".8"/>
+  <circle cx="1530" cy="76" r="10" fill="url(#sphY)" filter="url(#soft)"/>
+
+  <!-- atom -->
+  <g transform="translate(850 50)" fill="none" stroke="#3d7be0" stroke-opacity=".28" stroke-width="1.6">
+    <ellipse rx="26" ry="9"/>
+    <ellipse rx="26" ry="9" transform="rotate(60)"/>
+    <ellipse rx="26" ry="9" transform="rotate(-60)"/>
+    <circle r="4.5" fill="url(#sphB)" stroke="none"/>
+  </g>
+
+  <!-- open book -->
+  <g transform="translate(1590 66)" filter="url(#soft)" opacity=".9">
+    <path d="M0 -6 C -10 -14, -26 -14, -34 -10 L -34 14 C -26 10, -10 10, 0 18 Z" fill="url(#bookL)" stroke="#9db8e6" stroke-width="1"/>
+    <path d="M0 -6 C 10 -14, 26 -14, 34 -10 L 34 14 C 26 10, 10 10, 0 18 Z" fill="url(#bookR)" stroke="#9db8e6" stroke-width="1"/>
+    <path d="M-28 -4 C -20 -7, -10 -7, -5 -3 M-28 2 C -20 -1, -10 -1, -5 3 M28 -4 C 20 -7, 10 -7, 5 -3 M28 2 C 20 -1, 10 -1, 5 3" stroke="#9db8e6" stroke-width="1" fill="none"/>
+    <path d="M-34 14 C -26 10, -10 10, 0 18 C 10 10, 26 10, 34 14 L 34 18 C 26 14, 10 14, 0 22 C -10 14, -26 14, -34 18 Z" fill="#3d7be0" fill-opacity=".85"/>
+  </g>
+
+  <!-- graduation cap -->
+  <g transform="translate(1520 40)" filter="url(#soft)">
+    <path d="M-16 4 L-16 16 C -8 22, 8 22, 16 16 L 16 4 Z" fill="url(#capBase)"/>
+    <path d="M0 -14 L34 0 L0 14 L-34 0 Z" fill="url(#capTop)"/>
+    <path d="M0 -14 L34 0 L0 14 L-34 0 Z" fill="none" stroke="#5a74b0" stroke-opacity=".5" stroke-width="1"/>
+    <path d="M0 0 L24 6 L24 22" fill="none" stroke="#f2b33d" stroke-width="1.8" stroke-linecap="round"/>
+    <circle cx="24" cy="24" r="3" fill="url(#sphY)"/>
+    <circle cx="0" cy="0" r="2.4" fill="#f2b33d"/>
+  </g>
+
+  <!-- pencil -->
+  <g transform="translate(645 58) rotate(-28) scale(.85)" filter="url(#soft)" opacity=".85">
+    <rect x="-22" y="-4" width="34" height="8" rx="1.5" fill="#f2b33d"/>
+    <rect x="-22" y="-4" width="34" height="3" rx="1" fill="#ffd77a"/>
+    <rect x="-28" y="-4" width="6" height="8" rx="1.5" fill="#e98c9b"/>
+    <path d="M12 -4 L22 0 L12 4 Z" fill="#f3d9b1"/>
+    <path d="M19 -1.2 L22 0 L19 1.2 Z" fill="#33415f"/>
+  </g>
+
+  <!-- bottom highlight line -->
+  <rect y="98.5" width="1600" height="1.5" fill="#3d7be0" fill-opacity=".18"/>
+</svg>

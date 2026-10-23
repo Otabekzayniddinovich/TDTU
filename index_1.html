@@ -496,6 +496,8 @@
                 }
             }
         </style>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Manrope:wght@500;600;700;800&display=swap">
         <style id="tdtu-modern">
             :root { --tx-blue: #1e56c8; --tx-blue2: #3d8bfd; --tx-ink: #10224a; --tx-text: #44516e; --tx-muted: #8a97b2; --tx-line: rgba(16, 34, 74, .06); }
             html { scroll-behavior: smooth; }
@@ -523,29 +525,44 @@
             .tx-btn svg { width: 18px; height: 18px; }
 
             /* Header */
-            .tx-header { position: sticky; top: 0; z-index: 1000; background: rgba(255, 255, 255, .88); backdrop-filter: saturate(180%) blur(14px); -webkit-backdrop-filter: saturate(180%) blur(14px); border-bottom: 1px solid var(--tx-line); font-family: 'Inter Tight', sans-serif; }
-            .tx-header .tx-wrap { display: flex; align-items: center; justify-content: space-between; height: 84px; }
-            .tx-logo img { height: 58px; width: auto; display: block; }
+            .tx-header { position: sticky; top: 0; z-index: 1000; background: #f4f8ff url("header-bg.svg") center / cover no-repeat; border-bottom: 1px solid rgba(30, 86, 200, .12); box-shadow: 0 8px 30px rgba(16, 34, 74, .08); font-family: 'Manrope', 'Inter Tight', sans-serif; }
+            .tx-header .tx-wrap { display: flex; align-items: center; justify-content: space-between; height: 100px; max-width: 1280px; }
+            .tx-logo { display: flex; align-items: center; gap: 14px; text-decoration: none; }
+            .tx-emblem { flex: 0 0 auto; width: 74px; height: 74px; border-radius: 50%; overflow: hidden; background: #fff; box-shadow: 0 0 0 3px #fff, 0 0 0 4.5px rgba(31, 90, 44, .35), 0 10px 24px rgba(16, 34, 74, .18); }
+            .tx-emblem img { height: 100%; width: auto; max-width: none; display: block; margin-left: -3%; image-rendering: -webkit-optimize-contrast; }
+            .tx-logo-text { display: flex; flex-direction: column; justify-content: center; padding-left: 14px; border-left: 2.5px solid #1f5a2c; font-family: 'Cinzel', 'Times New Roman', serif; font-weight: 800; font-size: 16px; line-height: 1.18; letter-spacing: .06em; text-transform: uppercase; color: #1f5a2c; background: linear-gradient(180deg, #2c7a3e 0%, #174a23 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 1px 0 rgba(255, 255, 255, .8)); }
+            .tx-logo-text span { display: block; white-space: nowrap; }
             .tx-nav { display: flex; align-items: center; gap: 6px; list-style: none; margin: 0; padding: 0; }
             .tx-nav > li { position: relative; }
-            .tx-nav-top { display: inline-flex; align-items: center; gap: 6px; padding: 10px 16px; border-radius: 12px; border: 0; background: none; font: inherit; font-size: 15px; font-weight: 700; letter-spacing: .04em; color: var(--tx-ink); cursor: pointer; transition: background .2s ease, color .2s ease; }
+            .tx-nav-top { display: inline-flex; align-items: center; gap: 7px; padding: 11px 18px; border-radius: 14px; border: 1px solid transparent; background: none; font-family: 'Manrope', 'Inter Tight', sans-serif; font-size: 16.5px; font-weight: 800; letter-spacing: .07em; color: var(--tx-ink); cursor: pointer; transition: background .2s ease, color .2s ease; }
             .tx-nav-top svg { width: 14px; height: 14px; transition: transform .25s ease; }
-            .tx-nav > li:hover .tx-nav-top, .tx-nav > li.open .tx-nav-top { background: rgba(30, 86, 200, .08); color: var(--tx-blue); }
+            .tx-nav > li:hover .tx-nav-top, .tx-nav > li.open .tx-nav-top { background: rgba(255, 255, 255, .75); border-color: rgba(30, 86, 200, .18); color: var(--tx-blue); box-shadow: 0 6px 18px rgba(30, 86, 200, .14); backdrop-filter: blur(6px); }
             .tx-nav > li:hover .tx-nav-top svg, .tx-nav > li.open .tx-nav-top svg { transform: rotate(180deg); }
             .tx-drop { position: absolute; top: calc(100% + 8px); right: 0; min-width: 270px; padding: 10px; background: #fff; border-radius: 18px; border: 1px solid var(--tx-line); box-shadow: 0 22px 50px rgba(16, 34, 74, .16); opacity: 0; visibility: hidden; transform: translateY(8px); transition: opacity .2s ease, transform .2s ease, visibility .2s; }
             .tx-drop::before { content: ""; position: absolute; left: 0; right: 0; top: -10px; height: 10px; }
             .tx-nav > li:hover .tx-drop, .tx-nav > li.open .tx-drop { opacity: 1; visibility: visible; transform: translateY(0); }
-            .tx-drop a { display: block; padding: 10px 14px; border-radius: 10px; color: #33415f; font-size: 15px; font-weight: 500; text-decoration: none; transition: background .2s ease, color .2s ease; }
+            .tx-drop a { display: block; padding: 10px 14px; border-radius: 10px; color: #33415f; font-family: 'Manrope', 'Inter Tight', sans-serif; font-size: 15.5px; font-weight: 600; text-decoration: none; transition: background .2s ease, color .2s ease; }
             .tx-drop a:hover { background: #f0f5ff; color: var(--tx-blue); }
             .tx-drop .tx-group { margin: 6px 0 2px; padding: 8px 14px 4px; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--tx-muted); border-top: 1px solid #eef1f7; }
             .tx-drop .tx-group + a, .tx-drop .tx-sub-link { padding-left: 26px; }
             .tx-burger { display: none; width: 46px; height: 46px; border-radius: 12px; border: 1px solid var(--tx-line); background: #fff; align-items: center; justify-content: center; cursor: pointer; color: var(--tx-ink); }
             .tx-burger svg { width: 24px; height: 24px; }
+            @media (max-width: 1199px) and (min-width: 992px) {
+                .tx-nav-top { padding: 10px 11px; font-size: 15px; letter-spacing: .04em; }
+                .tx-logo-text { font-size: 14px; }
+            }
+            @media (max-width: 380px) {
+                .tx-header .tx-logo-text { font-size: 11px; letter-spacing: .03em; }
+                .tx-header .tx-emblem { width: 50px; height: 50px; }
+            }
             @media (max-width: 991px) {
                 .tx-burger { display: inline-flex; }
-                .tx-header .tx-wrap { height: 72px; }
-                .tx-logo img { height: 46px; }
-                .tx-nav { display: none; position: absolute; top: 72px; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0; padding: 12px 16px 20px; background: #fff; border-bottom: 1px solid var(--tx-line); box-shadow: 0 20px 40px rgba(16, 34, 74, .12); max-height: calc(100vh - 72px); overflow-y: auto; }
+                .tx-header .tx-wrap { height: 80px; }
+                .tx-header { background-image: linear-gradient(rgba(244, 248, 255, .72), rgba(244, 248, 255, .72)), url("header-bg.svg"); }
+                .tx-emblem { width: 58px; height: 58px; }
+                .tx-logo { gap: 10px; }
+                .tx-logo-text { font-size: 12.5px; padding-left: 10px; }
+                .tx-nav { display: none; position: absolute; top: 80px; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0; padding: 12px 16px 20px; background: #fff; border-bottom: 1px solid var(--tx-line); box-shadow: 0 20px 40px rgba(16, 34, 74, .12); max-height: calc(100vh - 80px); overflow-y: auto; }
                 .tx-header.menu-open .tx-nav { display: flex; }
                 .tx-nav-top { width: 100%; justify-content: space-between; padding: 14px 12px; }
                 .tx-drop { position: static; min-width: 0; padding: 0 0 8px 8px; border: 0; box-shadow: none; opacity: 1; visibility: visible; transform: none; display: none; }
@@ -744,7 +761,7 @@
     <body>
         <header class="tx-header" id="menu05-60">
             <div class="tx-wrap">
-                <a class="tx-logo" href="index.html"><img src="https://r.mobirisesite.com/361166/assets/images/112233-465x119.png?v=1S5I6z" alt="TDTU akademik litseyi"></a>
+                <a class="tx-logo" href="index.html" aria-label="Toshkent davlat texnika universiteti akademik litseyi"><span class="tx-emblem"><img src="https://r.mobirisesite.com/361166/assets/images/112233-465x119.png?v=1S5I6z" alt=""></span><span class="tx-logo-text"><span>Toshkent davlat</span><span>texnika universiteti</span><span>akademik litseyi</span></span></a>
                 <button class="tx-burger" type="button" aria-label="Menyu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
                 <ul class="tx-nav">
                     <li>
