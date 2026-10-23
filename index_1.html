@@ -1058,148 +1058,125 @@
                 </div>
             </div>
         </section>
-        <section data-bs-version="5.1" class="news01 cid-u6vyYCFK9t" id="news01-24">
+        <section data-bs-version="5.1" class="tdtu-news" id="news01-24">
+            <style>
+                .tdtu-news { padding: 90px 0; background: linear-gradient(180deg, #f3f6fc 0%, #ffffff 100%); font-family: 'Inter Tight', sans-serif; overflow: hidden; }
+                .tdtu-news .container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+                .tdtu-news .tn-head { text-align: center; margin-bottom: 56px; }
+                .tdtu-news .tn-badge { display: inline-block; padding: 6px 16px; border-radius: 999px; background: rgba(30, 86, 200, .1); color: #1e56c8; font-size: 14px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 14px; }
+                .tdtu-news .tn-title { font-family: 'Russo One', sans-serif; font-size: clamp(28px, 4vw, 44px); color: #10224a; margin: 0; }
+                .tdtu-news .tn-sub { color: #5b6b8c; font-size: 17px; margin: 12px auto 0; max-width: 560px; }
+                .tdtu-news .tn-list { position: relative; display: flex; flex-direction: column; gap: 28px; }
+                .tdtu-news .tn-list::before { content: ""; position: absolute; top: 8px; bottom: 8px; left: 47px; width: 2px; background: linear-gradient(180deg, #3d8bfd, rgba(61, 139, 253, .1)); }
+                .tdtu-news .tn-item { position: relative; display: grid; grid-template-columns: 96px 1fr; gap: 24px; align-items: start; }
+                .tdtu-news .tn-date { position: relative; z-index: 1; width: 96px; padding: 12px 0 10px; border-radius: 18px; text-align: center; background: linear-gradient(135deg, #1e56c8, #3d8bfd); color: #fff; box-shadow: 0 8px 20px rgba(30, 86, 200, .3); }
+                .tdtu-news .tn-day { display: block; font-family: 'Russo One', sans-serif; font-size: 30px; line-height: 1; }
+                .tdtu-news .tn-month { display: block; margin-top: 4px; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; }
+                .tdtu-news .tn-year { display: block; margin-top: 2px; font-size: 12px; opacity: .85; }
+                .tdtu-news .tn-card { background: #fff; border-radius: 22px; padding: 26px 28px; border: 1px solid rgba(16, 34, 74, .06); box-shadow: 0 8px 24px rgba(16, 34, 74, .07); transition: transform .35s ease, box-shadow .35s ease; will-change: transform; }
+                .tdtu-news .tn-card:hover { transform: scale(1.02); box-shadow: 0 22px 44px rgba(16, 34, 74, .14); }
+                .tdtu-news .tn-tag { display: inline-block; padding: 4px 12px; border-radius: 999px; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 12px; }
+                .tdtu-news .tn-tag.elon { background: #fdecef; color: #d6455d; }
+                .tdtu-news .tn-tag.news { background: #e8f0fe; color: #1e56c8; }
+                .tdtu-news .tn-tag.bayram { background: #fff4e0; color: #c27a00; }
+                .tdtu-news .tn-card h4 { margin: 0 0 10px; font-size: 21px; line-height: 1.35; font-weight: 700; color: #10224a; }
+                .tdtu-news .tn-card p { margin: 0 0 10px; font-size: 16px; line-height: 1.65; color: #44516e; }
+                .tdtu-news .tn-card p:last-child { margin-bottom: 0; }
+                .tdtu-news .tn-card ul { margin: 6px 0 12px; padding-left: 0; list-style: none; }
+                .tdtu-news .tn-card li { font-size: 15px; color: #44516e; padding: 3px 0; }
+                .tdtu-news .tn-card li strong { color: #10224a; }
+                .tdtu-news .tn-media { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 16px; }
+                .tdtu-news .tn-media a { display: block; border-radius: 14px; overflow: hidden; background: #f3f6fc; border: 1px solid rgba(16, 34, 74, .06); }
+                .tdtu-news .tn-media img { width: 100%; height: 320px; object-fit: contain; display: block; }
+                @media (max-width: 767px) {
+                    .tdtu-news .tn-list::before { left: 31px; }
+                    .tdtu-news .tn-item { grid-template-columns: 64px 1fr; gap: 14px; }
+                    .tdtu-news .tn-date { width: 64px; border-radius: 14px; padding: 10px 0 8px; }
+                    .tdtu-news .tn-day { font-size: 22px; }
+                    .tdtu-news .tn-month { font-size: 11px; }
+                    .tdtu-news .tn-year { font-size: 11px; }
+                    .tdtu-news .tn-card { padding: 20px 18px; }
+                    .tdtu-news .tn-card h4 { font-size: 18px; }
+                    .tdtu-news .tn-media { grid-template-columns: 1fr; }
+                    .tdtu-news .tn-media img { height: auto; }
+                }
+                @media (max-width: 575px) {
+                    .tdtu-news { padding: 60px 0; }
+                    .tdtu-news .container { padding: 0 16px; }
+                }
+                @media (prefers-reduced-motion: reduce) {
+                    .tdtu-news .tn-card { transition: none; }
+                    .tdtu-news .tn-card:hover { transform: none; }
+                }
+            </style>
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 mb-5 content-head">
-                        <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
-                            <strong>YANGILIKLAR / E'LONLAR</strong>
-                        </h3>
-                        <h5 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4 display-7">AKADEMIK LITSEY YANGILIKLARI</h5>
-                    </div>
+                <div class="tn-head">
+                    <span class="tn-badge">Akademik litsey yangiliklari</span>
+                    <h3 class="tn-title">YANGILIKLAR / E'LONLAR</h3>
+                    <p class="tn-sub">Litseyimiz hayotidagi so'nggi voqealar, e'lonlar va tadbirlar</p>
                 </div>
-               
-					<div class="row justify-content-left item features-without-image mb-4">
-                    <div class="col-12 col-lg-4">
-                        <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-7">
-                            <strong>14 mart &nbsp;</strong>
-                        </h5>
-                        <h6 class="mbr-card-subtitle mbr-fonts-style mt-0 mb-3 display-7">Mart 14, 2026</h6>
-                    </div>
-                    <div class="col-12 col-lg-8 item-wrapper">
-                        <p class="mbr-text mbr-fonts-style mt-0 display-7">
-                            <em>
-                                DIQQAT!
-<br>
-       
-                                <br>2026 yil 16-21 mart kunlari akademik litsey o'quvchilari o'rtasida amaldagi ta'lim dasturlarini takomillashtirish bo'yicha S O' R O V N O M A o'tkaziladi
-                            </em>
-                        </p>
-                    </div>
-                </div>
-				 <div class="row justify-content-left item mb-4 active">
-                    <div class="col-12 col-lg-4">
-                        <img class="w-100" src="cpp-sertifikat_1.jpg"" alt="C++ dasturlash kursi sertifikati">
-                        <h5 class="mbr-card-title mbr-fonts-style mt-3 mb-3 display-7">
-                            <strong> 25 august &nbsp;</strong>
-                        </h5>
-                        <h6 class="mbr-card-subtitle mbr-fonts-style mt-0 mb-3 display-7">Avgust 25, 2025</h6>
-                    </div>
-                    <div class="col-12 col-lg-8 item-wrapper">
-                        <p class="mbr-text mbr-fonts-style mt-0 display-7">
-                            <strong>II kurs o‘quvchilari diqqatiga </strong> </p>
-							<p class="mbr-text mbr-fonts-style mt-0 display-7"><strong>Aniq fan – 1 (matematika/fizika)</strong> va <strong>Aniq fan – 2 (matematika/xorijiy til)</strong> yo‘nalishlarida kasbiy fanlar bo‘yicha C++ dasturlash tili o‘rgatiladi. Kurs yakunida bitiruvchilarga “texnik dasturchi” kasbi bo‘yicha SERTIFIKAT beriladi.
-                        </p>
-                        <div class="mbr-section-btn">
-							<img src="photo_2026-08-17_14-49-04.jpg" alt="Rasm" width="1000" height="1200" style="max-width: 100%; height: auto;">
+                <div class="tn-list">
+                    <div class="tn-item">
+                        <div class="tn-date"><span class="tn-day">14</span><span class="tn-month">Mart</span><span class="tn-year">2026</span></div>
+                        <div class="tn-card">
+                            <span class="tn-tag elon">Diqqat!</span>
+                            <h4>Ta'lim dasturlarini takomillashtirish bo'yicha so'rovnoma</h4>
+                            <p>2026 yil 16-21 mart kunlari akademik litsey o'quvchilari o'rtasida amaldagi ta'lim dasturlarini takomillashtirish bo'yicha S O' R O V N O M A o'tkaziladi.</p>
                         </div>
                     </div>
-                </div>
-
-				 </h3>
-                        <h5 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4 display-7">AKADEMIK LITSEY YANGILIKLARI</h5>
+                    <div class="tn-item">
+                        <div class="tn-date"><span class="tn-day">25</span><span class="tn-month">Avgust</span><span class="tn-year">2025</span></div>
+                        <div class="tn-card">
+                            <span class="tn-tag news">Yangilik</span>
+                            <h4>II kurs o‘quvchilari diqqatiga</h4>
+                            <p><strong>Aniq fan – 1 (matematika/fizika)</strong> va <strong>Aniq fan – 2 (matematika/xorijiy til)</strong> yo‘nalishlarida kasbiy fanlar bo‘yicha C++ dasturlash tili o‘rgatiladi. Kurs yakunida bitiruvchilarga “texnik dasturchi” kasbi bo‘yicha SERTIFIKAT beriladi.</p>
+                            <div class="tn-media">
+                                <a href="cpp-sertifikat_1.jpg" target="_blank"><img src="cpp-sertifikat_1.jpg" alt="C++ dasturlash kursi sertifikati" loading="lazy"></a>
+                                <a href="photo_2026-08-17_14-49-04.jpg" target="_blank"><img src="photo_2026-08-17_14-49-04.jpg" alt="Rasm" loading="lazy"></a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-               
-					<div class="row justify-content-left item features-without-image mb-4">
-                    <div class="col-12 col-lg-4">
-                        <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-7">
-                            <strong> 3 may &nbsp;</strong>
-                        </h5>
-                        <h6 class="mbr-card-subtitle mbr-fonts-style mt-0 mb-3 display-7">May 03, 2026</h6>
+                    <div class="tn-item">
+                        <div class="tn-date"><span class="tn-day">3</span><span class="tn-month">May</span><span class="tn-year">2026</span></div>
+                        <div class="tn-card">
+                            <span class="tn-tag elon">📢 E'lon</span>
+                            <h4>📚 «Fanlarning o‘qitilish sifati» anonim so‘rovnomasi</h4>
+                            <p>Hurmatli akademik litsey o‘quvchilari!</p>
+                            <p>2025-yil 7-may kuni akademik litseyda o‘quvchilar o‘rtasida «Fanlarning o‘qitilish sifati» mavzusida anonim test-so‘rovnoma o‘tkaziladi.</p>
+                            <p>So‘rovnomadan asosiy maqsad — fanlarning o‘qitilish jarayoni, darslarning tashkil etilishi va o‘quvchilarning ta’lim jarayonidagi fikr-mulohazalarini o‘rganish hamda ta’lim sifatini yanada takomillashtirish.</p>
+                            <p>So‘rovnoma anonim tarzda o‘tkaziladi. O‘quvchilarning shaxsiy ma’lumotlari aniqlanmaydi.</p>
+                            <p>Har bir o‘quvchidan savollarga xolis, samimiy va haqqoniy javob berish so‘raladi. Sizning fikringiz ta’lim sifatini oshirishda muhim ahamiyatga ega!</p>
+                            <ul>
+                                <li><strong>O‘tkazilish sanasi:</strong> 2025-yil 7-may</li>
+                                <li><strong>Ishtirokchilar:</strong> akademik litsey o‘quvchilari</li>
+                                <li><strong>So‘rovnoma turi:</strong> anonim test-so‘rovnoma</li>
+                            </ul>
+                            <p><em>Sizning fikringiz — sifatli ta’lim sari muhim qadam! 📖</em></p>
+                        </div>
                     </div>
-                    <div class="col-12 col-lg-8 item-wrapper">
-                        <p class="mbr-text mbr-fonts-style mt-0 display-7">
-                            <em>
-                                E'LON!
-<br>
-       
-                                <br>
-								</em>📢 E’LON
-
-                      <br>📚 «FANLARNING O‘QITILISH SIFATI» ANONIM SO‘ROVNOMASI
-
-                      <br>Hurmatli akademik litsey o‘quvchilari!
-
-                      <br>2025-yil 7-may kuni akademik litseyda o‘quvchilar o‘rtasida «Fanlarning o‘qitilish sifati» mavzusida anonim test-so‘rovnoma o‘tkaziladi.
-
-                     <br>So‘rovnomadan asosiy maqsad — fanlarning o‘qitilish jarayoni, darslarning tashkil etilishi va o‘quvchilarning ta’lim jarayonidagi fikr-mulohazalarini o‘rganish hamda ta’lim sifatini yanada takomillashtirish.
-
-                    <br>  So‘rovnoma anonim tarzda o‘tkaziladi. O‘quvchilarning shaxsiy ma’lumotlari aniqlanmaydi.
-
-                       <br>Har bir o‘quvchidan savollarga xolis, samimiy va haqqoniy javob berish so‘raladi. Sizning fikringiz ta’lim sifatini oshirishda muhim ahamiyatga ega!
-
-                     <br>O‘tkazilish sanasi: 2025-yil 7-may
-                     <br> Ishtirokchilar: akademik litsey o‘quvchilari
-                     <br> So‘rovnoma turi: anonim test-so‘rovnoma
-
-Sizning fikringiz —    <br>sifatli ta’lim sari muhim qadam! 📖
-                            </em>
-                        </p>
+                    <div class="tn-item">
+                        <div class="tn-date"><span class="tn-day">8</span><span class="tn-month">Mart</span><span class="tn-year">2024</span></div>
+                        <div class="tn-card">
+                            <span class="tn-tag bayram">Bayram</span>
+                            <h4>Hurmatli majmuamiz xotin-qizlari! Muhtarama onaxonlar, munis opa-singillar!</h4>
+                            <p>Avvalambor, sizlarni, sizlarning timsolingizda barcha onaxonlarimiz, opa-singillarimiz, dilbar qizlarimizni go‘zallik bayrami 8 mart — Xalqaro xotin-qizlar kuni bilan jamoa nomidan samimiy muborakbod etaman!</p>
+                        </div>
                     </div>
-                </div>
-                <div class="row justify-content-left item features-without-image mb-4">
-                    <div class="col-12 col-lg-4">
-                        <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-7">
-                            <strong>8 mart &nbsp;</strong>
-                        </h5>
-                        <h6 class="mbr-card-subtitle mbr-fonts-style mt-0 mb-3 display-7">Mart 8, 2024</h6>
+                    <div class="tn-item">
+                        <div class="tn-date"><span class="tn-day">21</span><span class="tn-month">Mart</span><span class="tn-year">2024</span></div>
+                        <div class="tn-card">
+                            <span class="tn-tag bayram">Bayram</span>
+                            <h4>Navro‘z – tabiatning uyg‘onish va yangilanish bayramidir</h4>
+                            <p>Go‘zallik va yangilanish bayrami bo‘lgan Navro‘z — tabiat qo‘ynida o‘zgarishlar boshlangan, dov-daraxtlar, maysalar, novdalar uyg‘onib, kurtaklar nish ura boshlagan, tun bilan kun teng kelgan payt, yangi kun hisoblanadi. Butun insoniyat boy madaniy merosining ajralmas qismi sifatida eʼtirof etilgan Navro‘z bayrami tabiat uyg‘onishi, hayot tantanasi va bahoriy ko‘rkamlikni ifodalaydigan bayramdir.</p>
+                        </div>
                     </div>
-                    <div class="col-12 col-lg-8 item-wrapper">
-                        <p class="mbr-text mbr-fonts-style mt-0 display-7">
-                            <em>
-                                Hurmatli majmuamiz xotin-qizlari!
-<br>
-                                Muhtarama onaxonlar, munis opa-singillar!
-<br>
-                                <br>Avvalambor, sizlarni, sizlarning timsolingizda barcha onaxonlarimiz, opa-singillarimiz, dilbar qizlarimizni go‘zallik bayrami 8 mart — Xalqaro xotin-qizlar kuni bilan jamoa nomidan samimiy muborakbod etaman!
-                            </em>
-                        </p>
-                    </div>
-                </div>
-                <div class="row justify-content-left item features-without-image mb-4">
-                    <div class="col-12 col-lg-4">
-                        <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-7">
-                            <strong>21 mart &nbsp;</strong>
-                        </h5>
-                        <h6 class="mbr-card-subtitle mbr-fonts-style mt-0 mb-3 display-7">Mart 21, 2024</h6>
-                    </div>
-                    <div class="col-12 col-lg-8 item-wrapper">
-                        <p class="mbr-text mbr-fonts-style mt-0 display-7">
-                            <em>Navro‘z – tabiatning uyg‘onish va yangilanish bayramidir.</em>
-                            <br>
-                            <em>
-                                <br>
-                            </em>
-                            Go‘zallik va yangilanish bayrami bo‘lgan Navro‘z — tabiat qo‘ynida o‘zgarishlar boshlangan, dov-daraxtlar, maysalar, novdalar uyg‘onib, kurtaklar  nish ura boshlagan, tun bilan kun teng kelgan payt, yangi kun hisoblanadi. Butun insoniyat boy madaniy merosining ajralmas qismi sifatida eʼtirof etilgan Navro‘z bayrami tabiat uyg‘onishi, hayot tantanasi va bahoriy ko‘rkamlikni ifodalaydigan bayramdir.
-                            <em>
-                                <br>
-                            </em>
-                        </p>
-                    </div>
-                </div>
-                <div class="row justify-content-left item features-without-image mb-4">
-                    <div class="col-12 col-lg-4">
-                        <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-7">
-                            <strong>&nbsp;4 aprel &nbsp;</strong>
-                        </h5>
-                        <h6 class="mbr-card-subtitle mbr-fonts-style mt-0 mb-3 display-7">Aprel 4 , 2024</h6>
-                    </div>
-                    <div class="col-12 col-lg-8 item-wrapper">
-                        <p class="mbr-text mbr-fonts-style mt-0 display-7">
-                            IIB hodimlari bilan uchrashuv bo'lib o'tdi. Suhbatda " Vatanimiz uchun tahdidlarga qarshi ma'naviyat bilan kurashish " mavzusida so'z bordi. Tinchlikni qadrlash uni himoya qilish haqida videolavhalar taqdim etildi.<br>
-                            <em></em>
-                        </p>
+                    <div class="tn-item">
+                        <div class="tn-date"><span class="tn-day">4</span><span class="tn-month">Aprel</span><span class="tn-year">2024</span></div>
+                        <div class="tn-card">
+                            <span class="tn-tag news">Tadbir</span>
+                            <h4>IIB hodimlari bilan uchrashuv</h4>
+                            <p>IIB hodimlari bilan uchrashuv bo'lib o'tdi. Suhbatda " Vatanimiz uchun tahdidlarga qarshi ma'naviyat bilan kurashish " mavzusida so'z bordi. Tinchlikni qadrlash uni himoya qilish haqida videolavhalar taqdim etildi.</p>
+                        </div>
                     </div>
                 </div>
             </div>
