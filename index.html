@@ -497,7 +497,7 @@
             }
         </style>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Manrope:wght@500;600;700;800&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap">
         <style id="tdtu-modern">
             :root { --tx-blue: #1e56c8; --tx-blue2: #3d8bfd; --tx-ink: #10224a; --tx-text: #44516e; --tx-muted: #8a97b2; --tx-line: rgba(16, 34, 74, .06); }
             html { scroll-behavior: smooth; }
@@ -527,11 +527,8 @@
             /* Header */
             .tx-header { position: sticky; top: 0; z-index: 1000; background: #f4f8ff url("header-bg.svg") center / cover no-repeat; border-bottom: 1px solid rgba(30, 86, 200, .12); box-shadow: 0 8px 30px rgba(16, 34, 74, .08); font-family: 'Manrope', 'Inter Tight', sans-serif; }
             .tx-header .tx-wrap { display: flex; align-items: center; justify-content: space-between; height: 100px; max-width: 1280px; }
-            .tx-logo { display: flex; align-items: center; gap: 14px; text-decoration: none; }
-            .tx-emblem { flex: 0 0 auto; width: 74px; height: 74px; border-radius: 50%; overflow: hidden; background: #fff; box-shadow: 0 0 0 3px #fff, 0 0 0 4.5px rgba(31, 90, 44, .35), 0 10px 24px rgba(16, 34, 74, .18); }
-            .tx-emblem img { height: 100%; width: auto; max-width: none; display: block; margin-left: -3%; image-rendering: -webkit-optimize-contrast; }
-            .tx-logo-text { display: flex; flex-direction: column; justify-content: center; padding-left: 14px; border-left: 2.5px solid #1f5a2c; font-family: 'Cinzel', 'Times New Roman', serif; font-weight: 800; font-size: 16px; line-height: 1.18; letter-spacing: .06em; text-transform: uppercase; color: #1f5a2c; background: linear-gradient(180deg, #2c7a3e 0%, #174a23 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 1px 0 rgba(255, 255, 255, .8)); }
-            .tx-logo-text span { display: block; white-space: nowrap; }
+            .tx-logo { display: flex; align-items: center; text-decoration: none; }
+            .tx-logo img { height: 78px; width: auto; display: block; filter: drop-shadow(0 2px 6px rgba(255, 255, 255, .9)); }
             .tx-nav { display: flex; align-items: center; gap: 6px; list-style: none; margin: 0; padding: 0; }
             .tx-nav > li { position: relative; }
             .tx-nav-top { display: inline-flex; align-items: center; gap: 7px; padding: 11px 18px; border-radius: 14px; border: 1px solid transparent; background: none; font-family: 'Manrope', 'Inter Tight', sans-serif; font-size: 16.5px; font-weight: 800; letter-spacing: .07em; color: var(--tx-ink); cursor: pointer; transition: background .2s ease, color .2s ease; }
@@ -549,19 +546,16 @@
             .tx-burger svg { width: 24px; height: 24px; }
             @media (max-width: 1199px) and (min-width: 992px) {
                 .tx-nav-top { padding: 10px 11px; font-size: 15px; letter-spacing: .04em; }
-                .tx-logo-text { font-size: 14px; }
+                .tx-logo img { height: 66px; }
             }
             @media (max-width: 380px) {
-                .tx-header .tx-logo-text { font-size: 11px; letter-spacing: .03em; }
-                .tx-header .tx-emblem { width: 50px; height: 50px; }
+                .tx-header .tx-logo img { height: 46px; }
             }
             @media (max-width: 991px) {
                 .tx-burger { display: inline-flex; }
                 .tx-header .tx-wrap { height: 80px; }
                 .tx-header { background-image: linear-gradient(rgba(244, 248, 255, .72), rgba(244, 248, 255, .72)), url("header-bg.svg"); }
-                .tx-emblem { width: 58px; height: 58px; }
-                .tx-logo { gap: 10px; }
-                .tx-logo-text { font-size: 12.5px; padding-left: 10px; }
+                .tx-logo img { height: 56px; }
                 .tx-nav { display: none; position: absolute; top: 80px; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0; padding: 12px 16px 20px; background: #fff; border-bottom: 1px solid var(--tx-line); box-shadow: 0 20px 40px rgba(16, 34, 74, .12); max-height: calc(100vh - 80px); overflow-y: auto; }
                 .tx-header.menu-open .tx-nav { display: flex; }
                 .tx-nav-top { width: 100%; justify-content: space-between; padding: 14px 12px; }
@@ -761,7 +755,7 @@
     <body>
         <header class="tx-header" id="menu05-60">
             <div class="tx-wrap">
-                <a class="tx-logo" href="index.html" aria-label="Toshkent davlat texnika universiteti akademik litseyi"><span class="tx-emblem"><img src="https://r.mobirisesite.com/361166/assets/images/112233-465x119.png?v=1S5I6z" alt=""></span><span class="tx-logo-text"><span>Toshkent davlat</span><span>texnika universiteti</span><span>akademik litseyi</span></span></a>
+                <a class="tx-logo" href="index.html"><picture><source srcset="logo.webp" type="image/webp"><img src="logo.png" width="1211" height="300" alt="Islom Karimov nomidagi Toshkent davlat texnika universiteti akademik litseyi"></picture></a>
                 <button class="tx-burger" type="button" aria-label="Menyu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
                 <ul class="tx-nav">
                     <li>
