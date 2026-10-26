@@ -826,6 +826,23 @@
             .af-link p { margin: 0 0 14px; font-size: 15px; line-height: 1.55; color: var(--tx-text); }
             .af-link-url { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 999px; background: linear-gradient(135deg, var(--tx-blue), var(--tx-blue2)); color: #fff; font-size: 15px; font-weight: 700; box-shadow: 0 8px 20px rgba(30, 86, 200, .3); }
             .af-link-url svg { width: 16px; height: 16px; }
+            .af-mat { max-width: 980px; margin: 0 auto; }
+            .af-mat-year { display: flex; align-items: center; gap: 14px; margin: 34px 0 14px; font-family: 'Russo One', sans-serif; font-size: 26px; color: var(--tx-ink); }
+            .af-mat-year:first-child { margin-top: 0; }
+            .af-mat-year::after { content: ""; flex: 1; height: 2px; background: linear-gradient(90deg, rgba(30, 86, 200, .25), transparent); }
+            .af-mat-year small { font-family: 'Inter Tight', sans-serif; font-size: 14px; font-weight: 700; color: var(--tx-muted); }
+            .af-mat-list { display: flex; flex-direction: column; gap: 10px; list-style: none; margin: 0; padding: 0; }
+            .af-mat-item a { display: flex; align-items: center; gap: 14px; padding: 16px 20px; border-radius: 16px; background: #fff; border: 1px solid rgba(16, 34, 74, .07); box-shadow: 0 4px 14px rgba(16, 34, 74, .05); text-decoration: none; color: var(--tx-ink); transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+            .af-mat-item a:hover { transform: scale(1.015); box-shadow: 0 14px 30px rgba(16, 34, 74, .12); border-color: rgba(30, 86, 200, .3); }
+            .af-mat-date { flex: 0 0 auto; font-weight: 800; font-size: 16px; color: var(--tx-blue); font-variant-numeric: tabular-nums; }
+            .af-mat-dots { flex: 1 1 24px; min-width: 24px; border-bottom: 2px dotted #c3cfe6; transform: translateY(-4px); }
+            .af-mat-title { flex: 0 1 auto; font-size: 16px; font-weight: 600; text-align: right; }
+            .af-mat-pdf { flex: 0 0 auto; padding: 4px 10px; border-radius: 8px; background: #fdecef; color: #d6455d; font-size: 12px; font-weight: 800; letter-spacing: .05em; }
+            @media (max-width: 640px) {
+                .af-mat-item a { flex-wrap: wrap; gap: 6px 10px; padding: 14px 16px; }
+                .af-mat-dots { display: none; }
+                .af-mat-title { flex: 1 1 100%; order: 3; text-align: left; font-size: 15px; }
+            }
             @media (max-width: 767px) {
                 .af-links { grid-template-columns: 1fr; }
                 .af-link { flex-direction: column; align-items: flex-start; padding: 24px 20px; }
@@ -928,7 +945,11 @@
                 <p class="af-doc">III-Blok</p>
                 <h1>Sinov va diagnostik materiallar</h1>
                 <div class="af-subjects"><span>Matematika</span><span>Xorijiy til</span></div>
-                <p class="af-intro">BMBA/DTM va xalqaro standartlar bazasi: rasmiy namunaviy testlar, qabul talablari va kirish ballari bilan tanishish uchun quyidagi saytlardan foydalaning.</p>
+                <p class="af-intro">BMBA/DTM va xalqaro standartlar bazasi: rasmiy namunaviy testlar, qabul talablari va kirish ballari bilan tanishish uchun quyidagi saytlar hamda test variantlaridan foydalaning.</p>
+                <div class="af-actions">
+                    <a class="tx-btn primary" href="#materiallar">Test variantlari</a>
+                    <a class="tx-btn ghost" href="#saytlar">Foydali saytlar</a>
+                </div>
             </div>
             <div class="af-code" aria-hidden="true">III</div>
         </section>
@@ -960,6 +981,46 @@
                 </div>
             </div>
         </section>
+
+        <section class="tx-sec plain" id="materiallar">
+            <div class="tx-wrap">
+                <div class="tx-head">
+                    <span class="tx-badge">Sinov materiallari</span>
+                    <h2 class="tx-title">TEST VARIANTLARI</h2>
+                    <p class="tx-sub">Yozuvni bosing, PDF fayl yangi oynada ochiladi</p>
+                </div>
+                <div class="af-mat" id="af-mat"><noscript>Materiallar ro'yxatini ko'rish uchun brauzerda JavaScript yoqilgan bo'lishi kerak.</noscript></div>
+            </div>
+        </section>
+        <script src="materials/list.js"></script>
+        <script>
+            (function () {
+                var box = document.getElementById('af-mat');
+                var list = (window.TDTU_MATERIALS || []).slice().sort(function (a, b) { return a.date < b.date ? 1 : a.date > b.date ? -1 : 0; });
+                var years = {};
+                list.forEach(function (m) { (years[m.date.slice(0, 4)] = years[m.date.slice(0, 4)] || []).push(m); });
+                Object.keys(years).sort().reverse().forEach(function (y) {
+                    var h = document.createElement('div');
+                    h.className = 'af-mat-year';
+                    h.innerHTML = y + ' <small>' + years[y].length + ' ta material</small>';
+                    box.appendChild(h);
+                    var ul = document.createElement('ul');
+                    ul.className = 'af-mat-list';
+                    years[y].forEach(function (m) {
+                        var p = m.date.split('-');
+                        var li = document.createElement('li');
+                        li.className = 'af-mat-item';
+                        var a = document.createElement('a');
+                        a.href = m.file; a.target = '_blank'; a.rel = 'noopener';
+                        a.innerHTML = '<span class="af-mat-date"></span><span class="af-mat-dots"></span><span class="af-mat-title"></span><span class="af-mat-pdf">PDF</span>';
+                        a.children[0].textContent = p[2] + '/' + p[1] + '/' + p[0];
+                        a.children[2].textContent = m.title;
+                        li.appendChild(a); ul.appendChild(li);
+                    });
+                    box.appendChild(ul);
+                });
+            })();
+        </script>
         </main>
         <footer class="tx-footer">
             <div class="tx-wrap">
