@@ -985,14 +985,15 @@
                     <h2 class="tx-title">TEST VARIANTLARI</h2>
                     <p class="tx-sub">Yozuvni bosing, PDF fayl yangi oynada ochiladi</p>
                 </div>
-                <div class="af-mat" id="af-mat"><noscript>Materiallar ro'yxatini ko'rish uchun brauzerda JavaScript yoqilgan bo'lishi kerak.</noscript></div>
+                <div class="af-mat" id="af-mat" data-dir="aniq-fanlar-4"><noscript>Materiallar ro'yxatini ko'rish uchun brauzerda JavaScript yoqilgan bo'lishi kerak.</noscript></div>
             </div>
         </section>
         <script src="materials/list.js"></script>
         <script>
             (function () {
                 var box = document.getElementById('af-mat');
-                var list = (window.TDTU_MATERIALS || []).slice().sort(function (a, b) { return a.date < b.date ? 1 : a.date > b.date ? -1 : 0; });
+                var dir = box.getAttribute('data-dir');
+                var list = (window.TDTU_MATERIALS || []).filter(function (m) { return !m.directions || m.directions.indexOf(dir) >= 0; }).sort(function (a, b) { return a.date < b.date ? 1 : a.date > b.date ? -1 : 0; });
                 var years = {};
                 list.forEach(function (m) { (years[m.date.slice(0, 4)] = years[m.date.slice(0, 4)] || []).push(m); });
                 Object.keys(years).sort().reverse().forEach(function (y) {
