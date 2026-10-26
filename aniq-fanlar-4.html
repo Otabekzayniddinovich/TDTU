@@ -767,6 +767,9 @@
             .af-code { position: absolute; right: -10px; bottom: -40px; font-family: 'Russo One', sans-serif; font-size: clamp(90px, 16vw, 220px); line-height: 1; color: rgba(255, 255, 255, .05); pointer-events: none; }
 
             .af-block { position: relative; padding: 30px 26px; display: flex; flex-direction: column; gap: 14px; overflow: hidden; }
+            a.af-block { text-decoration: none; }
+            a.af-block:hover { box-shadow: 0 22px 44px rgba(30, 86, 200, .22); }
+            a.af-block .tx-dir-go { margin-top: auto; }
             .af-block::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 5px; background: linear-gradient(90deg, var(--tx-blue), var(--tx-blue2)); }
             .af-block .tx-dir-num { font-size: 54px; }
             .af-block h4 { margin: 0; font-size: 19px; line-height: 1.4; font-weight: 800; color: var(--tx-ink); }
@@ -907,7 +910,7 @@
                 <p class="af-intro">Ushbu hujjat Akademik litseyning 3910004 – Aniq fanlar-4 (Matematika, Ona tili va adabiyot) yo'nalishi o'quvchilari uchun 4 ta asosiy blokdan iborat yangilanuvchi ma'lumotlar bazasining tarkibiy tuzilishi, mos OTM bakalavriat yo'nalishlari va kodlari, ularning rasmiy brend logotiplari, zamonaviy va kelajak kasblari hamda web-portal interfeysi materiallarini o'z ichiga oladi.</p>
                 <div class="af-actions">
                     <a class="tx-btn primary" href="#bloklar">4 ta asosiy blok <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-                    <a class="tx-btn ghost" href="#otmlar">Mos OTMlar</a>
+                    <a class="tx-btn ghost" href="aniq-fanlar-4-otm.html">Mos OTMlar</a>
                     <a class="tx-btn ghost" href="#kasblar">Kelajak kasblari</a>
                 </div>
             </div>
@@ -928,12 +931,13 @@
                         <span class="tx-dir-tag">I-Blok</span>
                         <h4>Ilmiy-tadqiqot va texnik yangiliklar bazasi</h4>
                     </div>
-                    <div class="tx-card af-block">
+                    <a class="tx-card af-block" href="aniq-fanlar-4-otm.html">
                         <span class="tx-dir-num">II</span>
                         <div class="tx-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2M2 13h20"/></svg></div>
                         <span class="tx-dir-tag">II-Blok</span>
                         <h4>Mehnat bozori va OTM talablari (Talab va taklif) bazasi</h4>
-                    </div>
+                        <span class="tx-dir-go">Mos OTMlar va yo'nalish kodlari <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+                    </a>
                     <div class="tx-card af-block">
                         <span class="tx-dir-num">III</span>
                         <div class="tx-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
@@ -950,76 +954,8 @@
             </div>
         </section>
 
-        <section class="tx-sec alt" id="otmlar">
-            <div class="tx-wrap">
-                <div class="tx-head">
-                    <span class="tx-badge">OTMlar</span>
-                    <h2 class="tx-title">MOS OTMLAR VA YO'NALISH KODLARI</h2>
-                    <p class="tx-sub">Matematika va Ona tili fanlari bo'yicha mos OTMlar, yo'nalish kodlari va logolari</p>
-                </div>
-                <div class="af-otm-list">
-                    <div class="tx-card af-otm">
-                        <img src="img/otm/toshdotau.webp" alt="Alisher Navoiy nomidagi Toshkent davlat o'zbek tili va adabiyoti universiteti (ToshDO'TAU) logotipi" loading="lazy">
-                        <div>
-                            <h4>Alisher Navoiy nomidagi Toshkent davlat o'zbek tili va adabiyoti universiteti (ToshDO'TAU)</h4>
-                            <ul class="af-codes">
-                                <li><b>60230400</b><span>Kompyuter lingvistikasi (1-fan: Ona tili va adabiyot, 2-fan: Matematika)</span></li>
-                                <li><b>60230300</b><span>Noshirlik ishi (Matn tahriri va texnik ta'minot)</span></li>
-                            </ul>
-                            <p class="af-desc">Sun'iy intellekt, chatbotlar, mashina tarjimasi hamda matnlarni raqamli tahlil qilish imkoniyati.</p>
-                        </div>
-                    </div>
-                    <div class="tx-card af-otm">
-                        <img src="img/otm/ozmu.webp" alt="O'zbekiston Milliy Universiteti (O'zMU) logotipi" loading="lazy">
-                        <div>
-                            <h4>O'zbekiston Milliy Universiteti (O'zMU)</h4>
-                            <ul class="af-codes">
-                                <li><b>60230400</b><span>Kompyuter lingvistikasi</span></li>
-                                <li><b>60310400</b><span>Sotsiologiya (1-fan: Matematika, 2-fan: Ona tili)</span></li>
-                                <li><b>60110500</b><span>Boshlang'ich ta'lim</span></li>
-                            </ul>
-                            <p class="af-desc">Matematik mantiq, amaliy modellashtirish va sotsiologik-statik tahlil o'rgatiladi.</p>
-                        </div>
-                    </div>
-                    <div class="tx-card af-otm">
-                        <img src="img/otm/tatu.webp" alt="Toshkent axborot texnologiyalari universiteti (TATU) logotipi" loading="lazy">
-                        <div>
-                            <h4>Toshkent axborot texnologiyalari universiteti (TATU)</h4>
-                            <ul class="af-codes">
-                                <li><b>60230400</b><span>Kompyuter lingvistikasi (NLP va Sun'iy intellekt)</span></li>
-                                <li><b>60610100</b><span>Axborot tizimlari va texnologiyalari</span></li>
-                            </ul>
-                            <p class="af-desc">AI modellari va matnni avtomatik qayta ishlash texnologiyalari bo'yicha tayyorlaydi.</p>
-                        </div>
-                    </div>
-                    <div class="tx-card af-otm">
-                        <img src="img/otm/tdiu.webp" alt="Toshkent davlat iqtisodiyot universiteti (TDIU) logotipi" loading="lazy">
-                        <div>
-                            <h4>Toshkent davlat iqtisodiyot universiteti (TDIU)</h4>
-                            <ul class="af-codes">
-                                <li><b>60310100</b><span>Iqtisodiyot (tarmoqlar bo'yicha)</span></li>
-                                <li><b>60410100</b><span>Moliya va moliyaviy texnologiyalar</span></li>
-                                <li><b>60411200</b><span>Biznes analitika va ekonometrika</span></li>
-                            </ul>
-                            <p class="af-desc">Matematik modellashtirish va tahliliy hisobot tayyorlash kompetensiyalari.</p>
-                        </div>
-                    </div>
-                    <div class="tx-card af-otm">
-                        <img src="img/otm/tdpu.webp" alt="Toshkent davlat pedagogika universiteti (TDPU) va Pedagogika Institutlari logotipi" loading="lazy">
-                        <div>
-                            <h4>Toshkent davlat pedagogika universiteti (TDPU) va Pedagogika Institutlari</h4>
-                            <ul class="af-codes">
-                                <li><b>60110500</b><span>Boshlang'ich ta'lim</span></li>
-                                <li><b>60110600</b><span>Nogironligi bo'lgan shaxslar ta'limi (Surdopedagogika)</span></li>
-                            </ul>
-                            <p class="af-desc">Boshlang'ich sinflarga matematika va savodxonlikni o'rgatuvchi metodist-pedagoglar.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section class="tx-sec plain" id="kasblar">
+        <section class="tx-sec alt" id="kasblar">
             <div class="tx-wrap">
                 <div class="tx-head">
                     <span class="tx-badge">Katalog</span>
@@ -1121,7 +1057,7 @@
             </div>
         </section>
 
-        <section class="tx-sec alt" id="portal">
+        <section class="tx-sec plain" id="portal">
             <div class="tx-wrap">
                 <div class="tx-head">
                     <span class="tx-badge">UI/UX</span>

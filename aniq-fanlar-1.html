@@ -767,6 +767,9 @@
             .af-code { position: absolute; right: -10px; bottom: -40px; font-family: 'Russo One', sans-serif; font-size: clamp(90px, 16vw, 220px); line-height: 1; color: rgba(255, 255, 255, .05); pointer-events: none; }
 
             .af-block { position: relative; padding: 30px 26px; display: flex; flex-direction: column; gap: 14px; overflow: hidden; }
+            a.af-block { text-decoration: none; }
+            a.af-block:hover { box-shadow: 0 22px 44px rgba(30, 86, 200, .22); }
+            a.af-block .tx-dir-go { margin-top: auto; }
             .af-block::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 5px; background: linear-gradient(90deg, var(--tx-blue), var(--tx-blue2)); }
             .af-block .tx-dir-num { font-size: 54px; }
             .af-block h4 { margin: 0; font-size: 19px; line-height: 1.4; font-weight: 800; color: var(--tx-ink); }
@@ -911,7 +914,7 @@
                 <p class="af-intro">3910001 – Aniq fanlar-1 (Matematika, Fizika) yo'nalishi o'quvchilarni texnika, muhandislik va axborot texnologiyalari sohalaridagi oliy ta'lim muassasalariga tayyorlaydi. Ushbu sahifada yo'nalish bo'yicha 4 ta asosiy blokdan iborat ma'lumotlar bazasi tuzilishi, mos OTM bakalavriat yo'nalishlari va kodlari hamda zamonaviy va kelajak kasblari jamlangan.</p>
                 <div class="af-actions">
                     <a class="tx-btn primary" href="#bloklar">4 ta asosiy blok <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-                    <a class="tx-btn ghost" href="#otmlar">Mos OTMlar</a>
+                    <a class="tx-btn ghost" href="aniq-fanlar-1-otm.html">Mos OTMlar</a>
                     <a class="tx-btn ghost" href="#kasblar">Kelajak kasblari</a>
                 </div>
             </div>
@@ -932,12 +935,13 @@
                         <span class="tx-dir-tag">I-Blok</span>
                         <h4>Ilmiy-tadqiqot va texnik yangiliklar bazasi</h4>
                     </div>
-                    <div class="tx-card af-block">
+                    <a class="tx-card af-block" href="aniq-fanlar-1-otm.html">
                         <span class="tx-dir-num">II</span>
                         <div class="tx-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2M2 13h20"/></svg></div>
                         <span class="tx-dir-tag">II-Blok</span>
                         <h4>Mehnat bozori va OTM talablari (Talab va taklif) bazasi</h4>
-                    </div>
+                        <span class="tx-dir-go">Mos OTMlar va yo'nalish kodlari <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+                    </a>
                     <div class="tx-card af-block">
                         <span class="tx-dir-num">III</span>
                         <div class="tx-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
@@ -954,54 +958,8 @@
             </div>
         </section>
 
-        <section class="tx-sec alt" id="otmlar">
-            <div class="tx-wrap">
-                <div class="tx-head">
-                    <span class="tx-badge">OTMlar</span>
-                    <h2 class="tx-title">MOS OTMLAR VA YO'NALISH KODLARI</h2>
-                    <p class="tx-sub">Matematika va Fizika fanlari bo'yicha mos OTMlar va bakalavriat yo'nalish kodlari</p>
-                </div>
-                <div class="af-otm-list">
-                    <div class="tx-card af-otm">
-                        <div class="af-badge" style="background: #1e56c8;" aria-hidden="true">TDTU</div>
-                        <div>
-                            <h4>Islom Karimov nomidagi Toshkent davlat texnika universiteti (TDTU)</h4>
-                            <ul class="af-codes">
-                                <li><b>60711000</b><span>Mexatronika va robototexnika</span></li>
-                                <li><b>60710400</b><span>Energetika muhandisligi</span></li>
-                                <li><b>60710500</b><span>Elektr muhandisligi</span></li>
-                            </ul>
-                            <p class="af-desc">Litseyimiz faoliyat yuritayotgan universitet: muhandislik, energetika va robototexnika bo'yicha mutaxassislar tayyorlaydi.</p>
-                        </div>
-                    </div>
-                    <div class="tx-card af-otm">
-                        <div class="af-badge" style="background: #2340a8;" aria-hidden="true">TATU</div>
-                        <div>
-                            <h4>Muhammad al-Xorazmiy nomidagi Toshkent axborot texnologiyalari universiteti (TATU)</h4>
-                            <ul class="af-codes">
-                                <li><b>60610100</b><span>Axborot tizimlari va texnologiyalari</span></li>
-                                <li><b>60610300</b><span>Kompyuter injiniringi</span></li>
-                            </ul>
-                            <p class="af-desc">Dasturlash, kompyuter tizimlari va axborot texnologiyalari bo'yicha tayyorlaydi.</p>
-                        </div>
-                    </div>
-                    <div class="tx-card af-otm">
-                        <div class="af-badge" style="background: #10224a;" aria-hidden="true">O'zMU</div>
-                        <div>
-                            <h4>Mirzo Ulug'bek nomidagi O'zbekiston Milliy universiteti (O'zMU)</h4>
-                            <ul class="af-codes">
-                                <li><b>60540100</b><span>Matematika</span></li>
-                                <li><b>60530500</b><span>Fizika</span></li>
-                            </ul>
-                            <p class="af-desc">Fundamental matematika va fizika, ilmiy-tadqiqot faoliyatiga tayyorlaydi.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="af-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><div>Bakalavriat yo'nalish kodlari 2025/2026-o'quv yili uchun tasdiqlangan fanlar majmuasi asosida keltirilgan. Kodlar va OTMlardagi yo'nalishlar har yili o'zgarishi mumkin, shuning uchun qabuldan oldin Bilimni baholash agentligi (uzbmb.uz) va OTMning rasmiy saytidan tekshiring.</div></div>
-            </div>
-        </section>
 
-        <section class="tx-sec plain" id="kasblar">
+        <section class="tx-sec alt" id="kasblar">
             <div class="tx-wrap">
                 <div class="tx-head">
                     <span class="tx-badge">Katalog</span>
