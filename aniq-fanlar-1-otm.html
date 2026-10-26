@@ -813,6 +813,11 @@
             .af-note { display: flex; gap: 14px; align-items: flex-start; max-width: 880px; margin: 36px auto 0; padding: 18px 20px; border-radius: 16px; background: #fff8e8; border: 1px solid #f6dfa6; color: #6b5313; font-size: 15px; line-height: 1.6; }
             .af-note svg { flex: 0 0 22px; width: 22px; height: 22px; color: #c78714; margin-top: 1px; }
             @media (max-width: 575px) { .af-badge { width: 88px; height: 88px; font-size: 18px; } }
+            .af-kind { display: inline-block; margin: 0 0 10px; padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; }
+            .af-kind.private { background: #fff1e6; color: #c25a12; }
+            .af-kind.foreign { background: #f1e8fb; color: #7a2a8c; }
+            .af-codes li.nocode::before { content: "•"; color: var(--tx-blue2); font-weight: 700; }
+            .af-otm-count { display: inline-block; margin-top: 10px; padding: 6px 14px; border-radius: 999px; background: #e8f0fe; color: var(--tx-blue); font-size: 14px; font-weight: 700; }
         </style>
     </head>
     <body>
@@ -925,6 +930,7 @@
                     <span class="tx-badge">OTMlar</span>
                     <h2 class="tx-title">MOS OTMLAR VA YO'NALISH KODLARI</h2>
                     <p class="tx-sub">Matematika va Fizika fanlari bo'yicha mos OTMlar va bakalavriat yo'nalish kodlari</p>
+                    <span class="af-otm-count">10 ta OTM</span>
                 </div>
                 <div class="af-otm-list">
                     <div class="tx-card af-otm">
@@ -959,6 +965,81 @@
                                 <li><b>60530500</b><span>Fizika</span></li>
                             </ul>
                             <p class="af-desc">Fundamental matematika va fizika, ilmiy-tadqiqot faoliyatiga tayyorlaydi.</p>
+                        </div>
+                    </div>
+                    <div class="tx-card af-otm">
+                        <div class="af-badge" style="background: #1e56c8; font-size: 16px;" aria-hidden="true">TATU SF</div>
+                        <div>
+                            <h4>Muhammad al-Xorazmiy nomidagi TATU Samarqand filiali</h4>
+                            <ul class="af-codes">
+                                <li><b>60610300</b><span>Kompyuter injiniringi</span></li>
+                            </ul>
+                            <p class="af-desc">Kompyuter tizimlari va tarmoqlari bo'yicha muhandislar tayyorlaydi.</p>
+                        </div>
+                    </div>
+                    <div class="tx-card af-otm">
+                        <div class="af-badge" style="background: #0f8a61;" aria-hidden="true">UrDU</div>
+                        <div>
+                            <h4>Urganch davlat universiteti</h4>
+                            <ul class="af-codes">
+                                <li><b>60610300</b><span>Kompyuter injiniringi</span></li>
+                            </ul>
+                            <p class="af-desc">Kompyuter injiniringi yo'nalishi bo'yicha Matematika va Fizika fanlaridan qabul qiladi.</p>
+                        </div>
+                    </div>
+                    <div class="tx-card af-otm">
+                        <div class="af-badge" style="background: #7a2a8c;" aria-hidden="true">SamDU</div>
+                        <div>
+                            <h4>Sharof Rashidov nomidagi Samarqand davlat universiteti</h4>
+                            <ul class="af-codes">
+                                <li><b>60540100</b><span>Matematika</span></li>
+                            </ul>
+                            <p class="af-desc">Fundamental va amaliy matematika bo'yicha mutaxassislar tayyorlaydi.</p>
+                        </div>
+                    </div>
+                    <div class="tx-card af-otm">
+                        <div class="af-badge" style="background: #c25a12;" aria-hidden="true">CYBER</div>
+                        <div>
+                            <h4>Cyber University (Nurafshon)</h4>
+                            <ul class="af-codes">
+                                <li><b>60610300</b><span>Kompyuter injiniringi</span></li>
+                            </ul>
+                            <p class="af-desc">2025-yilda tashkil etilgan, raqamli texnologiyalar va kiberxavfsizlikka ixtisoslashgan universitet.</p>
+                        </div>
+                    </div>
+                    <div class="tx-card af-otm">
+                        <div class="af-badge" style="background: #0e7490;" aria-hidden="true">AFU</div>
+                        <div>
+                            <span class="af-kind private">Xususiy OTM</span>
+                            <h4>Alfraganus universiteti</h4>
+                            <ul class="af-codes">
+                                <li><b>60610300</b><span>Kompyuter injiniringi</span></li>
+                            </ul>
+                            <p class="af-desc">Raqamli texnologiyalar fakultetida kunduzgi, kechki va sirtqi shakllarda o'qitiladi.</p>
+                        </div>
+                    </div>
+                    <div class="tx-card af-otm">
+                        <div class="af-badge" style="background: #b4235a;" aria-hidden="true">INHA</div>
+                        <div>
+                            <span class="af-kind foreign">Xorijiy OTM filiali / hamkorlik</span>
+                            <h4>Toshkent shahridagi Inha universiteti</h4>
+                            <ul class="af-codes">
+                                <li class="nocode"><span>Kompyuter va axborot muhandisligi (SOCIE)</span></li>
+                            </ul>
+                            <p class="af-desc">Kirish uchun IELTS kamida 5.0 hamda matematika va fizikadan test topshiriladi.</p>
+                        </div>
+                    </div>
+                    <div class="tx-card af-otm">
+                        <div class="af-badge" style="background: #3f51b5;" aria-hidden="true">TTPU</div>
+                        <div>
+                            <span class="af-kind foreign">Xorijiy OTM filiali / hamkorlik</span>
+                            <h4>Toshkent shahridagi Turin politexnika universiteti</h4>
+                            <ul class="af-codes">
+                                <li class="nocode"><span>Dasturiy injiniring</span></li>
+                                <li class="nocode"><span>Kompyuter injiniringi</span></li>
+                                <li class="nocode"><span>Mashinasozlik, Aerokosmik injiniring</span></li>
+                            </ul>
+                            <p class="af-desc">Ta'lim ingliz tilida; kirish uchun IELTS va matematika testi. Bitiruvchilar TTPU va Politecnico di Torino diplomlarini oladi.</p>
                         </div>
                     </div>
                 </div>

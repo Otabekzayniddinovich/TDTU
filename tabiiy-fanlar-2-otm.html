@@ -813,6 +813,11 @@
             .af-note { display: flex; gap: 14px; align-items: flex-start; max-width: 880px; margin: 36px auto 0; padding: 18px 20px; border-radius: 16px; background: #fff8e8; border: 1px solid #f6dfa6; color: #6b5313; font-size: 15px; line-height: 1.6; }
             .af-note svg { flex: 0 0 22px; width: 22px; height: 22px; color: #c78714; margin-top: 1px; }
             @media (max-width: 575px) { .af-badge { width: 88px; height: 88px; font-size: 18px; } }
+            .af-kind { display: inline-block; margin: 0 0 10px; padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; }
+            .af-kind.private { background: #fff1e6; color: #c25a12; }
+            .af-kind.foreign { background: #f1e8fb; color: #7a2a8c; }
+            .af-codes li.nocode::before { content: "•"; color: var(--tx-blue2); font-weight: 700; }
+            .af-otm-count { display: inline-block; margin-top: 10px; padding: 6px 14px; border-radius: 999px; background: #e8f0fe; color: var(--tx-blue); font-size: 14px; font-weight: 700; }
         </style>
     </head>
     <body>
@@ -925,6 +930,7 @@
                     <span class="tx-badge">OTMlar</span>
                     <h2 class="tx-title">MOS OTMLAR VA YO'NALISH KODLARI</h2>
                     <p class="tx-sub">Kimyo va Matematika fanlari bo'yicha mos OTMlar va bakalavriat yo'nalish kodlari</p>
+                    <span class="af-otm-count">11 ta OTM</span>
                 </div>
                 <div class="af-otm-list">
                     <div class="tx-card af-otm">
@@ -937,6 +943,106 @@
                                 <li><b>60721100</b><span>Neft va gaz ishi</span></li>
                             </ul>
                             <p class="af-desc">Kimyoviy ishlab chiqarish, neft-gazni qayta ishlash va yangi materiallar texnologiyalari bo'yicha tayyorlaydi.</p>
+                        </div>
+                    </div>
+                    <div class="tx-card af-otm">
+                        <div class="af-badge" style="background: #1e56c8;" aria-hidden="true">TDTU</div>
+                        <div>
+                            <h4>Islom Karimov nomidagi Toshkent davlat texnika universiteti (TDTU)</h4>
+                            <ul class="af-codes">
+                                <li><b>60720600</b><span>Neft va neft-gazni qayta ishlash texnologiyasi (kechki ta'lim)</span></li>
+                            </ul>
+                            <p class="af-desc">Litseyimiz faoliyat yuritayotgan universitet: 2025/2026 qabulida kechki ta'lim shaklida.</p>
+                        </div>
+                    </div>
+                    <div class="tx-card af-otm">
+                        <div class="af-badge" style="background: #0f8a61;" aria-hidden="true">BMTI</div>
+                        <div>
+                            <h4>Buxoro muhandislik-texnologiya instituti</h4>
+                            <ul class="af-codes">
+                                <li><b>60720600</b><span>Neft va neft-gazni qayta ishlash texnologiyasi</span></li>
+                            </ul>
+                            <p class="af-desc">Neft-gaz va kimyo sanoati uchun muhandis-texnologlar tayyorlaydi.</p>
+                        </div>
+                    </div>
+                    <div class="tx-card af-otm">
+                        <div class="af-badge" style="background: #7a2a8c; font-size: 16px;" aria-hidden="true">FarDTU</div>
+                        <div>
+                            <h4>Farg'ona davlat texnika universiteti</h4>
+                            <ul class="af-codes">
+                                <li><b>60710100</b><span>Kimyo muhandisligi</span></li>
+                            </ul>
+                            <p class="af-desc">Kimyo muhandisligi bo'yicha Kimyo va Matematika fanlaridan qabul qiladi.</p>
+                        </div>
+                    </div>
+                    <div class="tx-card af-otm">
+                        <div class="af-badge" style="background: #c25a12;" aria-hidden="true">NDKTU</div>
+                        <div>
+                            <h4>Navoiy davlat konchilik va texnologiyalar universiteti</h4>
+                            <ul class="af-codes">
+                                <li><b>60710100</b><span>Kimyo muhandisligi</span></li>
+                            </ul>
+                            <p class="af-desc">Konchilik-metallurgiya va kimyo sanoati uchun mutaxassislar tayyorlaydi.</p>
+                        </div>
+                    </div>
+                    <div class="tx-card af-otm">
+                        <div class="af-badge" style="background: #0e7490;" aria-hidden="true">O'zMU</div>
+                        <div>
+                            <h4>Mirzo Ulug'bek nomidagi O'zbekiston Milliy universiteti</h4>
+                            <ul class="af-codes">
+                                <li><b>60530100</b><span>Kimyo</span></li>
+                            </ul>
+                            <p class="af-desc">Fundamental kimyo va ilmiy-tadqiqot faoliyatiga tayyorlaydi.</p>
+                        </div>
+                    </div>
+                    <div class="tx-card af-otm">
+                        <div class="af-badge" style="background: #b4235a;" aria-hidden="true">SamDU</div>
+                        <div>
+                            <h4>Sharof Rashidov nomidagi Samarqand davlat universiteti</h4>
+                            <ul class="af-codes">
+                                <li><b>60530100</b><span>Kimyo</span></li>
+                            </ul>
+                            <p class="af-desc">Kimyo yo'nalishi bo'yicha Kimyo va Matematika fanlaridan qabul qiladi.</p>
+                        </div>
+                    </div>
+                    <div class="tx-card af-otm">
+                        <div class="af-badge" style="background: #3f51b5;" aria-hidden="true">BuxDU</div>
+                        <div>
+                            <h4>Buxoro davlat universiteti</h4>
+                            <ul class="af-codes">
+                                <li><b>60530100</b><span>Kimyo</span></li>
+                            </ul>
+                            <p class="af-desc">Kimyo yo'nalishi bo'yicha Kimyo va Matematika fanlaridan qabul qiladi.</p>
+                        </div>
+                    </div>
+                    <div class="tx-card af-otm">
+                        <div class="af-badge" style="background: #5b6b1f; font-size: 16px;" aria-hidden="true">SamDPI</div>
+                        <div>
+                            <h4>Samarqand davlat pedagogika instituti</h4>
+                            <ul class="af-codes">
+                                <li><b>60530100</b><span>Kimyo</span></li>
+                            </ul>
+                            <p class="af-desc">Kimyo yo'nalishi bo'yicha Kimyo va Matematika fanlaridan qabul qiladi.</p>
+                        </div>
+                    </div>
+                    <div class="tx-card af-otm">
+                        <div class="af-badge" style="background: #10224a;" aria-hidden="true">ADU</div>
+                        <div>
+                            <h4>Andijon davlat universiteti</h4>
+                            <ul class="af-codes">
+                                <li><b>60530100</b><span>Kimyo</span></li>
+                            </ul>
+                            <p class="af-desc">Kimyo yo'nalishi bo'yicha Kimyo va Matematika fanlaridan qabul qiladi.</p>
+                        </div>
+                    </div>
+                    <div class="tx-card af-otm">
+                        <div class="af-badge" style="background: #1e56c8;" aria-hidden="true">TerDU</div>
+                        <div>
+                            <h4>Termiz davlat universiteti</h4>
+                            <ul class="af-codes">
+                                <li><b>60530100</b><span>Kimyo</span></li>
+                            </ul>
+                            <p class="af-desc">Kimyo yo'nalishi bo'yicha Kimyo va Matematika fanlaridan qabul qiladi.</p>
                         </div>
                     </div>
                 </div>

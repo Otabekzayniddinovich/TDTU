@@ -813,6 +813,11 @@
             .af-note { display: flex; gap: 14px; align-items: flex-start; max-width: 880px; margin: 36px auto 0; padding: 18px 20px; border-radius: 16px; background: #fff8e8; border: 1px solid #f6dfa6; color: #6b5313; font-size: 15px; line-height: 1.6; }
             .af-note svg { flex: 0 0 22px; width: 22px; height: 22px; color: #c78714; margin-top: 1px; }
             @media (max-width: 575px) { .af-badge { width: 88px; height: 88px; font-size: 18px; } }
+            .af-kind { display: inline-block; margin: 0 0 10px; padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; }
+            .af-kind.private { background: #fff1e6; color: #c25a12; }
+            .af-kind.foreign { background: #f1e8fb; color: #7a2a8c; }
+            .af-codes li.nocode::before { content: "•"; color: var(--tx-blue2); font-weight: 700; }
+            .af-otm-count { display: inline-block; margin-top: 10px; padding: 6px 14px; border-radius: 999px; background: #e8f0fe; color: var(--tx-blue); font-size: 14px; font-weight: 700; }
         </style>
     </head>
     <body>
@@ -925,6 +930,7 @@
                     <span class="tx-badge">OTMlar</span>
                     <h2 class="tx-title">MOS OTMLAR VA YO'NALISH KODLARI</h2>
                     <p class="tx-sub">Matematika va Xorijiy til fanlari bo'yicha mos OTMlar va bakalavriat yo'nalish kodlari</p>
+                    <span class="af-otm-count">9 ta OTM</span>
                 </div>
                 <div class="af-otm-list">
                     <div class="tx-card af-otm">
@@ -933,6 +939,7 @@
                             <h4>Toshkent davlat iqtisodiyot universiteti (TDIU)</h4>
                             <ul class="af-codes">
                                 <li><b>60410100</b><span>Iqtisodiyot</span></li>
+                                <li><b>60410600</b><span>Bank ishi</span></li>
                             </ul>
                             <p class="af-desc">Iqtisodiy tahlil, moliya va biznes bo'yicha matematik modellashtirish kompetensiyalarini beradi.</p>
                         </div>
@@ -945,6 +952,78 @@
                                 <li><b>60411100</b><span>Jahon iqtisodiyoti va xalqaro iqtisodiy munosabatlar</span></li>
                             </ul>
                             <p class="af-desc">Xalqaro savdo, investitsiyalar va xorijiy tilda ishlash ko'nikmalarini rivojlantiradi.</p>
+                        </div>
+                    </div>
+                    <div class="tx-card af-otm">
+                        <div class="af-badge" style="background: #1e56c8; font-size: 16px;" aria-hidden="true">O'zDJTU</div>
+                        <div>
+                            <h4>O'zbekiston davlat jahon tillari universiteti</h4>
+                            <ul class="af-codes">
+                                <li><b>60411100</b><span>Jahon iqtisodiyoti va xalqaro iqtisodiy munosabatlar</span></li>
+                            </ul>
+                            <p class="af-desc">Xorijiy tillarni chuqur bilish bilan xalqaro iqtisodiyot bo'yicha tayyorlaydi.</p>
+                        </div>
+                    </div>
+                    <div class="tx-card af-otm">
+                        <div class="af-badge" style="background: #0f8a61;" aria-hidden="true">O'zMU</div>
+                        <div>
+                            <h4>Mirzo Ulug'bek nomidagi O'zbekiston Milliy universiteti</h4>
+                            <ul class="af-codes">
+                                <li><b>60410600</b><span>Bank ishi</span></li>
+                            </ul>
+                            <p class="af-desc">Bank faoliyati va moliyaviy xizmatlar bo'yicha mutaxassislar tayyorlaydi.</p>
+                        </div>
+                    </div>
+                    <div class="tx-card af-otm">
+                        <div class="af-badge" style="background: #7a2a8c;" aria-hidden="true">BuxDU</div>
+                        <div>
+                            <h4>Buxoro davlat universiteti</h4>
+                            <ul class="af-codes">
+                                <li><b>60411200</b><span>Marketing</span></li>
+                            </ul>
+                            <p class="af-desc">Bozor tahlili va marketing strategiyalari bo'yicha tayyorlaydi.</p>
+                        </div>
+                    </div>
+                    <div class="tx-card af-otm">
+                        <div class="af-badge" style="background: #c25a12; font-size: 16px;" aria-hidden="true">NamDTU</div>
+                        <div>
+                            <h4>Namangan davlat texnika universiteti</h4>
+                            <ul class="af-codes">
+                                <li><b>60411200</b><span>Marketing</span></li>
+                            </ul>
+                            <p class="af-desc">Marketing yo'nalishi bo'yicha Matematika va Chet tili fanlaridan qabul qiladi.</p>
+                        </div>
+                    </div>
+                    <div class="tx-card af-otm">
+                        <div class="af-badge" style="background: #0e7490;" aria-hidden="true">UrDU</div>
+                        <div>
+                            <h4>Urganch davlat universiteti</h4>
+                            <ul class="af-codes">
+                                <li><b>60411200</b><span>Marketing</span></li>
+                            </ul>
+                            <p class="af-desc">Marketing yo'nalishi bo'yicha Matematika va Chet tili fanlaridan qabul qiladi.</p>
+                        </div>
+                    </div>
+                    <div class="tx-card af-otm">
+                        <div class="af-badge" style="background: #b4235a;" aria-hidden="true">AFU</div>
+                        <div>
+                            <span class="af-kind private">Xususiy OTM</span>
+                            <h4>Alfraganus universiteti</h4>
+                            <ul class="af-codes">
+                                <li><b>60410100</b><span>Iqtisodiyot</span></li>
+                            </ul>
+                            <p class="af-desc">Iqtisodiyot fakultetida iqtisodiy tahlil va boshqaruv bo'yicha tayyorlaydi.</p>
+                        </div>
+                    </div>
+                    <div class="tx-card af-otm">
+                        <div class="af-badge" style="background: #3f51b5;" aria-hidden="true">INHA</div>
+                        <div>
+                            <span class="af-kind foreign">Xorijiy OTM filiali / hamkorlik</span>
+                            <h4>Toshkent shahridagi Inha universiteti</h4>
+                            <ul class="af-codes">
+                                <li class="nocode"><span>Logistika (SBL)</span></li>
+                            </ul>
+                            <p class="af-desc">Kirish uchun IELTS kamida 5.5 va faqat matematikadan test topshiriladi.</p>
                         </div>
                     </div>
                 </div>

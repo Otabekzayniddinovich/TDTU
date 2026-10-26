@@ -809,6 +809,13 @@
                 .af-ui-item { grid-template-columns: 1fr; padding: 22px 18px; }
                 .af-actions .tx-btn { width: 100%; justify-content: center; }
             }
+            .af-kind { display: inline-block; margin: 0 0 10px; padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; }
+            .af-kind.private { background: #fff1e6; color: #c25a12; }
+            .af-kind.foreign { background: #f1e8fb; color: #7a2a8c; }
+            .af-codes li.nocode::before { content: "•"; color: var(--tx-blue2); font-weight: 700; }
+            .af-otm-count { display: inline-block; margin-top: 10px; padding: 6px 14px; border-radius: 999px; background: #e8f0fe; color: var(--tx-blue); font-size: 14px; font-weight: 700; }
+            .af-badge { width: 110px; height: 110px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-align: center; color: #fff; font-family: 'Russo One', sans-serif; font-size: 22px; letter-spacing: .02em; box-shadow: 0 0 0 4px #fff inset, 0 0 0 6px rgba(255, 255, 255, .35) inset, 0 10px 24px rgba(16, 34, 74, .18); }
+            @media (max-width: 575px) { .af-badge { width: 88px; height: 88px; font-size: 18px; } }
         </style>
     </head>
     <body>
@@ -921,6 +928,7 @@
                     <span class="tx-badge">OTMlar</span>
                     <h2 class="tx-title">MOS OTMLAR VA YO'NALISH KODLARI</h2>
                     <p class="tx-sub">Matematika va Ona tili fanlari bo'yicha mos OTMlar, yo'nalish kodlari va logolari</p>
+                    <span class="af-otm-count">13 ta OTM</span>
                 </div>
                 <div class="af-otm-list">
                     <div class="tx-card af-otm">
@@ -978,6 +986,87 @@
                                 <li><b>60110600</b><span>Nogironligi bo'lgan shaxslar ta'limi (Surdopedagogika)</span></li>
                             </ul>
                             <p class="af-desc">Boshlang'ich sinflarga matematika va savodxonlikni o'rgatuvchi metodist-pedagoglar.</p>
+                        </div>
+                    </div>
+                    <div class="tx-card af-otm">
+                        <div class="af-badge" style="background: #1e56c8; font-size: 16px;" aria-hidden="true">O'zDJTU</div>
+                        <div>
+                            <h4>O'zbekiston davlat jahon tillari universiteti</h4>
+                            <ul class="af-codes">
+                                <li><b>60230400</b><span>Kompyuter lingvistikasi</span></li>
+                            </ul>
+                            <p class="af-desc">Tillarni raqamli qayta ishlash va kompyuter lingvistikasi bo'yicha tayyorlaydi.</p>
+                        </div>
+                    </div>
+                    <div class="tx-card af-otm">
+                        <div class="af-badge" style="background: #0f8a61;" aria-hidden="true">TDShU</div>
+                        <div>
+                            <h4>Toshkent davlat sharqshunoslik universiteti</h4>
+                            <ul class="af-codes">
+                                <li><b>60230400</b><span>Kompyuter lingvistikasi</span></li>
+                            </ul>
+                            <p class="af-desc">Sharq tillari va kompyuter lingvistikasi bo'yicha mutaxassislar tayyorlaydi.</p>
+                        </div>
+                    </div>
+                    <div class="tx-card af-otm">
+                        <div class="af-badge" style="background: #7a2a8c; font-size: 16px;" aria-hidden="true">SamDChTI</div>
+                        <div>
+                            <h4>Samarqand davlat chet tillar instituti</h4>
+                            <ul class="af-codes">
+                                <li><b>60230400</b><span>Kompyuter lingvistikasi</span></li>
+                            </ul>
+                            <p class="af-desc">Kompyuter lingvistikasi bo'yicha Ona tili va adabiyot hamda Matematika fanlaridan qabul qiladi.</p>
+                        </div>
+                    </div>
+                    <div class="tx-card af-otm">
+                        <div class="af-badge" style="background: #c25a12;" aria-hidden="true">TerDU</div>
+                        <div>
+                            <h4>Termiz davlat universiteti</h4>
+                            <ul class="af-codes">
+                                <li><b>60230400</b><span>Kompyuter lingvistikasi</span></li>
+                            </ul>
+                            <p class="af-desc">Kompyuter lingvistikasi bo'yicha Ona tili va adabiyot hamda Matematika fanlaridan qabul qiladi.</p>
+                        </div>
+                    </div>
+                    <div class="tx-card af-otm">
+                        <div class="af-badge" style="background: #0e7490;" aria-hidden="true">ADU</div>
+                        <div>
+                            <h4>Andijon davlat universiteti</h4>
+                            <ul class="af-codes">
+                                <li><b>60230400</b><span>Kompyuter lingvistikasi</span></li>
+                            </ul>
+                            <p class="af-desc">Kompyuter lingvistikasi bo'yicha Ona tili va adabiyot hamda Matematika fanlaridan qabul qiladi.</p>
+                        </div>
+                    </div>
+                    <div class="tx-card af-otm">
+                        <div class="af-badge" style="background: #b4235a;" aria-hidden="true">BuxDU</div>
+                        <div>
+                            <h4>Buxoro davlat universiteti</h4>
+                            <ul class="af-codes">
+                                <li><b>60230400</b><span>Kompyuter lingvistikasi</span></li>
+                            </ul>
+                            <p class="af-desc">Kompyuter lingvistikasi bo'yicha Ona tili va adabiyot hamda Matematika fanlaridan qabul qiladi.</p>
+                        </div>
+                    </div>
+                    <div class="tx-card af-otm">
+                        <div class="af-badge" style="background: #3f51b5;" aria-hidden="true">ChDPU</div>
+                        <div>
+                            <h4>Chirchiq davlat pedagogika universiteti</h4>
+                            <ul class="af-codes">
+                                <li><b>60110500</b><span>Boshlang'ich ta'lim</span></li>
+                            </ul>
+                            <p class="af-desc">Boshlang'ich sinf o'qituvchilarini tayyorlaydi.</p>
+                        </div>
+                    </div>
+                    <div class="tx-card af-otm">
+                        <div class="af-badge" style="background: #5b6b1f;" aria-hidden="true">OU</div>
+                        <div>
+                            <span class="af-kind private">Xususiy OTM</span>
+                            <h4>Oriental universiteti</h4>
+                            <ul class="af-codes">
+                                <li><b>60110500</b><span>Boshlang'ich ta'lim</span></li>
+                            </ul>
+                            <p class="af-desc">Boshlang'ich ta'lim yo'nalishi bo'yicha xususiy oliy ta'lim muassasasi.</p>
                         </div>
                     </div>
                 </div>
